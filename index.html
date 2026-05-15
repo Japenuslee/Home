@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="敬鹏 · 软件开发工程师个人主页 — 前端 / 全栈开发 · Vue · React · C++ · OpenCV">
+  <title>敬鹏 | 软件开发工程师</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>👨‍💻</text></svg>">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">JingPeng</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#experience">经历</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <a href="敬鹏.pdf" class="btn btn-sm" target="_blank" download>📄 下载简历</a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">你好，我是</p>
+      <h1 class="hero-name">敬 鹏</h1>
+      <div class="hero-typing">
+        <span class="typing-prefix">一名</span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        计算机专业本科，具备前端全栈与工业控制软件开发经验。<br>
+        热爱技术，追求简洁优雅的代码。
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">查看项目</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+        <a href="https://github.com/Japenus" class="btn btn-ghost" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>向下滚动</span>
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            我毕业于<strong>武汉轻工大学</strong>信息与计算科学专业（GPA 3.5，排名前 20%），
+            主修操作系统、数据结构与算法、计算机网络、数据库等核心课程。
+          </p>
+          <p>
+            在<strong>字节跳动</strong>和<strong>百度</strong>的实习经历中，我积累了前端开发的实际经验，
+            参与过低代码平台构建；在<strong>正运动技术</strong>担任技术开发工程师期间，
+            负责工业控制器上位机软件开发，拓展了软硬件结合的能力。
+          </p>
+          <p>
+            课余时间我喜欢研究开源项目，有安卓逆向工程经验，也在自动驾驶路径规划算法方向做过研究。
+          </p>
+        </div>
+        <div class="about-info">
+          <div class="info-card">
+            <span class="info-icon">🎓</span>
+            <div>
+              <p class="info-label">学历</p>
+              <p class="info-value">本科 · 信息与计算科学</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">📍</span>
+            <div>
+              <p class="info-label">所在地</p>
+              <p class="info-value">深圳</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">💼</span>
+            <div>
+              <p class="info-label">求职方向</p>
+              <p class="info-value">软件开发 / 前端全栈</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">🌐</span>
+            <div>
+              <p class="info-label">语言</p>
+              <p class="info-value">英语 CET-4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">专业技能</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">🎨</span>
+            <h3>前端开发</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Vue 3</span><span>React</span><span>TypeScript</span>
+            <span>Vite</span><span>HTML5</span><span>CSS3</span>
+            <span>JavaScript</span><span>Promise</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">⚙️</span>
+            <h3>后端 & 数据库</h3>
+          </div>
+          <div class="skill-tags">
+            <span>SpringBoot</span><span>MyBatis</span><span>MySQL</span>
+            <span>C/C++</span><span>Java</span><span>Python</span>
+            <span>Qt</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">🛠️</span>
+            <h3>工具 & 平台</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Linux</span><span>Shell</span><span>Git</span>
+            <span>VS Code</span><span>IDEA</span><span>Navicat</span>
+            <span>Android Studio</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon">🔬</span>
+            <h3>其他技术</h3>
+          </div>
+          <div class="skill-tags">
+            <span>OpenCV</span><span>Matlab</span><span>Android 逆向</span>
+            <span>PLC/HMI</span><span>MFC</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">项目作品</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-img">
+            <span>🚗</span>
+          </div>
+          <div class="project-body">
+            <h3>自动驾驶路径规划算法研究</h3>
+            <p>在导师指导下研究无人驾驶路径规划算法，使用 Matlab 实现仿真，采用贝塞尔曲线对路径进行平滑优化，使得路线曲率连续且更符合实际驾驶场景，最终完成论文获得导师认可。</p>
+            <div class="project-tech">
+              <span>Matlab</span><span>贝塞尔曲线</span><span>路径规划</span>
+            </div>
+            <span class="project-date">2023.03 – 2023.05</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <span>🎂</span>
+          </div>
+          <div class="project-body">
+            <h3>线上蛋糕定制系统</h3>
+            <p>担任组长，采用前后端分离模式开发网上商城。前端使用原生 JS + Vue，后端采用 SpringBoot + MyBatis + MySQL，完成度约 90%，前端资源托管于 GitHub。</p>
+            <div class="project-tech">
+              <span>SpringBoot</span><span>Vue</span><span>MySQL</span><span>MyBatis</span>
+            </div>
+            <span class="project-date">2022.06 – 2022.08</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <span>⚡</span>
+          </div>
+          <div class="project-body">
+            <h3>低代码平台</h3>
+            <p>基于 Vue 3 + Vite + TypeScript 构建低代码平台，支持可视化页面搭建、控件配置与预览导出。负责组件封装与 API 对接。项目托管于 GitHub。</p>
+            <div class="project-tech">
+              <span>Vue 3</span><span>Vite</span><span>TypeScript</span>
+            </div>
+            <span class="project-date">2022.06 – 2022.09</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <span>💬</span>
+          </div>
+          <div class="project-body">
+            <h3>C++ 多人聊天室</h3>
+            <p>基于 C++ 与 Socket 编程实现多人实时在线聊天系统，支持多客户端并发连接与消息广播，加深了对网络编程与多线程的理解。</p>
+            <div class="project-tech">
+              <span>C++</span><span>Socket</span><span>多线程</span><span>Linux</span>
+            </div>
+            <span class="project-date">在校项目</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">工作经历</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>技术开发工程师</h3>
+                <p class="timeline-org">深圳市正运动技术有限公司</p>
+              </div>
+              <span class="timeline-date">2023.04 – 2023.08</span>
+            </div>
+            <ul>
+              <li>负责控制器上位机软件开发与机台控制应用，使用 Basic 语言结合 HMI/PLC 辅助开发</li>
+              <li>学习接口技术与硬件驱动，配合示教盒完成调试</li>
+              <li>与客户及上级紧密沟通，保障项目进度</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>前端开发实习生</h3>
+                <p class="timeline-org">北京字节跳动科技有限公司</p>
+              </div>
+              <span class="timeline-date">2022.06 – 2022.09</span>
+            </div>
+            <ul>
+              <li>参与低代码平台前端开发（Vue 3 + Vite + TypeScript），实现可视化页面搭建、控件配置与预览导出</li>
+              <li>负责组件封装与 API 对接，提升代码复用率</li>
+              <li>通过飞书进行远程协作，代码托管于 GitHub</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Web 前端开发实习生</h3>
+                <p class="timeline-org">百度</p>
+              </div>
+              <span class="timeline-date">2021.12 – 2022.03</span>
+            </div>
+            <ul>
+              <li>负责训练营大项目的 Web 页面构建与功能测试，实现动态页面访问</li>
+              <li>代码托管于 Gitee，熟悉 Git 协作流程与企业级前端开发规范</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <div class="contact-grid">
+        <a href="mailto:2268809627@qq.com" class="contact-card">
+          <span class="contact-icon">📧</span>
+          <h3>Email</h3>
+          <p>2268809627@qq.com</p>
+        </a>
+        <a href="tel:18576440416" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <h3>电话</h3>
+          <p>185 7644 0416</p>
+        </a>
+        <a href="https://github.com/Japenus" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </span>
+          <h3>GitHub</h3>
+          <p>github.com/Japenus</p>
+        </a>
+        <div class="contact-card">
+          <span class="contact-icon">💬</span>
+          <h3>微信</h3>
+          <p>Japenuslee-Y</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 敬鹏 · Built with ❤️</p>
+      <p class="footer-sub">All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="返回顶部">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
