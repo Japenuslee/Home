@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>敬鹏 · 软件开发工程师</title>
+<style>
+  :root {
+    --primary: #1a1a2e;
+    --accent: #2d6cdf;
+    --bg: #fafafa;
+    --card-bg: #ffffff;
+    --text: #333;
+    --text-light: #666;
+    --border: #e8e8e8;
+    --tag-bg: #edf2fb;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", -apple-system, sans-serif;
+    background: #e8ecf2;
+    color: var(--text);
+    line-height: 1.7;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .page {
+    width: 800px;
+    background: var(--card-bg);
+    box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--primary);
+    color: #fff;
+    padding: 36px 48px 28px;
+  }
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+  .header .title {
+    font-size: 15px;
+    color: #aac4f0;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+  .header .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    font-size: 13px;
+    color: #ccd6e8;
+  }
+  .header .contact span { white-space: nowrap; }
+  .header .contact a { color: #ccd6e8; text-decoration: none; }
+  .header .contact a:hover { color: #fff; }
+
+  /* ── Section ── */
+  .body { padding: 32px 48px 40px; }
+  .section { margin-bottom: 28px; }
+  .section:last-child { margin-bottom: 0; }
+
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  /* ── Summary ── */
+  .summary-text {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.8;
+  }
+
+  /* ── Skills ── */
+  .skill-group { margin-bottom: 12px; }
+  .skill-group:last-child { margin-bottom: 0; }
+  .skill-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    display: inline-block;
+    width: 90px;
+    vertical-align: top;
+  }
+  .skill-tags {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .skill-tags .tag {
+    background: var(--tag-bg);
+    color: var(--primary);
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 3px;
+  }
+
+  /* ── Timeline ── */
+  .item { margin-bottom: 18px; }
+  .item:last-child { margin-bottom: 0; }
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+  .item-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+  .item-subtitle {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .item-meta {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 6px;
+  }
+  .item-meta span { margin-right: 16px; }
+  .item ul {
+    padding-left: 18px;
+    font-size: 13.5px;
+    color: var(--text);
+  }
+  .item li { margin-bottom: 4px; }
+  .item li:last-child { margin-bottom: 0; }
+
+  /* ── Print ── */
+  @media print {
+    body {
+      background: #fff;
+      padding: 0;
+    }
+    .page {
+      box-shadow: none;
+      border-radius: 0;
+      width: 100%;
+    }
+    .header { padding: 28px 36px 22px; }
+    .body { padding: 24px 36px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ─── Header ────────────────────── -->
+  <div class="header">
+    <h1>敬 鹏</h1>
+    <div class="title">软件开发工程师</div>
+    <div class="contact">
+      <span>📞 18576440416</span>
+      <span>📧 2268809627@qq.com</span>
+      <span>📍 深圳</span>
+      <span>🌐 <a href="https://japenuslee.github.io/Home/">japenuslee.github.io</a></span>
+    </div>
+  </div>
+
+  <!-- ─── Body ──────────────────────── -->
+  <div class="body">
+    <!-- 教育背景 -->
+    <div class="section">
+      <div class="section-title">教育背景</div>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">武汉轻工大学</span>
+          <span class="item-subtitle">信息与计算科学 · 本科</span>
+        </div>
+        <div class="item-meta"><span>2019.09 – 2023.06</span><span>武汉</span><span>GPA: 3.5（前 20%）</span></div>
+        <ul>
+          <li>核心课程：操作系统、计算机组成原理、数据结构与算法、数据库系统概论、计算机网络、C 语言程序设计、算法设计与分析</li>
+        </ul>
+      </div>
+    </div>
+    <!-- 工作与实习经历 -->
+    <div class="section">
+      <div class="section-title">工作经历</div>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">深圳市正运动技术有限公司</span>
+          <span class="item-subtitle">技术开发工程师</span>
+        </div>
+        <div class="item-meta"><span>2023.04 – 2023.08</span><span>深圳</span></div>
+        <ul>
+          <li>负责控制器上位机软件开发与机台控制应用，使用 Basic 语言进行程序设计与编码</li>
+          <li>结合 HMI、PLC 辅助开发，学习接口技术与硬件驱动，配合示教盒完成调试工作</li>
+          <li>与客户及上级紧密沟通，保障项目进度，获得团队协作与工程实践经验</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">深圳市千里智能控制科技有限公司</span>
+          <span class="item-subtitle">软件工程师</span>
+        </div>
+        <div class="item-meta"><span>2023.11 – 至今</span><span>深圳</span></div>
+        <ul>
+          <li>负责公司视觉核心算法库维护与迭代</li>
+          <li>完善视觉定位识别系统，提升算法稳定性</li>
+          <li>开发相机标定算法以适应高精度定位场景</li>
+          <li>开发视觉缺陷检测算法应用于工业检控机项目</li>
+          <li>与工业相机供应商对接，开发对应相机驱动模块</li>
+          <li>重构视觉框架，解耦相机模块与视觉核心定位模块，封装为动态库插件供上层应用使用</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 项目经历 -->
+    <div class="section">
+      <div class="section-title">项目经历</div>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">海目星激光手机芯片视觉定位切割设备</span>
+          <span class="item-subtitle">算法负责人</span>
+        </div>
+        <div class="item-meta"><span>2024.12 – 2025.03</span><span>视觉高精度定位系统</span></div>
+        <ul>
+          <li>芯片实际尺寸2mm*3mm,现有定位算法精度无法达到客户预期,采用提取芯片垂直边缘提取轮廓求解交点方案提升定位精度与识别稳定性</li>
+          <li>算法框架设计与主要接口封装，供上位机开发人员调用</li>
+          <li>算法大量测试与验证，协助测试人员测试，并提供测试数据改进算法鲁棒性，跟进项目进度确保按期交付</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">华龙新力激光科技宝石加工设备</span>
+          <span class="item-subtitle">视觉算法负责人</span>
+        </div>
+        <div class="item-meta"><span>2025.06 – 2025.08</span><span>视觉标定与产品轮廓提取系统</span></div>
+        <ul>
+          <li>客户使用单平台和激光器以及全局视野工业相机提取产品轮廓生成加工图纸，由上层业务层基于生成图纸排样后在产品上雕刻纹理以达到产品预期效果</li>
+          <li>负责实现全局相机高精度标定算法与手动定位模块开发，封装数据提取与发送接口</li>
+          <li>协助测试人员测试标定精度及提取数据的完整性，确保传递给工艺层的位置精确数据完整</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 证书 & 其他 -->
+<!--    <div class="section">-->
+<!--      <div class="section-title">证书及其他</div>-->
+<!--      <div style="font-size:13.5px; color:var(&#45;&#45;text-light); line-height:2;">-->
+<!--        <span style="margin-right:32px;">🏷 CET-4</span>-->
+<!--        <span style="margin-right:32px;">🏷 C++ MFC 可视化编程</span>-->
+<!--        <span>🏷 校国旗班成员</span>-->
+<!--      </div>-->
+<!--    </div>-->
+
+  </div>
+</div>
+
+</body>
+</html>
